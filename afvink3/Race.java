@@ -41,7 +41,7 @@ import javax.swing.*;
 public class Race extends JFrame implements ActionListener {
 
     /** declaratie van variabelen */
-    private static int lengte = 250;
+    private static int lengte = 1000;
     Paard h1;
     Paard h2;
     Paard h3;
@@ -53,7 +53,7 @@ public class Race extends JFrame implements ActionListener {
     /** Applicatie - main functie voor runnen applicatie */
     public static void main(String[] args) {
         Race frame = new Race();
-        frame.setSize(400,170);
+        frame.setSize(1400,250);
         /* (4) Geef het frame een breedte van 400 en hoogte van 140 */
         frame.createGUI();
         frame.setVisible(true);
@@ -66,7 +66,7 @@ public class Race extends JFrame implements ActionListener {
         /** Tekenen van de finish streep */
 
         /* (5) Geef de finish streep een rode kleur */
-        g.fillRect(lengte, 0, 3, 125);
+        g.fillRect(lengte+3, 0, 3, 200);
         g.setColor(Color.red);
 
         h1 = new Paard("Henry", Color.green);
@@ -131,7 +131,7 @@ public class Race extends JFrame implements ActionListener {
         Container window = getContentPane();
         window.setLayout(new FlowLayout());
         panel = new JPanel();
-        panel.setPreferredSize(new Dimension(300, 125));
+        panel.setPreferredSize(new Dimension(1300, 200));
         panel.setBackground(Color.white);
         window.add(panel);
         button = new JButton("Run forest!");
@@ -142,8 +142,12 @@ public class Race extends JFrame implements ActionListener {
 
     /** Teken het paard */
     private void tekenPaard(Graphics g, Paard h) {
+        Image raceDing = Toolkit.getDefaultToolkit().getImage("D:\\School\\Jaar2\\Blok1\\Afvinkopdrachten\\Afvink2.1.3\\Afvink 2.1.3.2\\src\\afvink3\\coockie.png");
+        g.setColor(Color.white);
+        g.fillRect(0, 30 * h.getPaardNummer(), h.getAfstand()-16, 16);
         g.setColor(h.getKleur());
-        g.fillRect(10, 20 * h.getPaardNummer(), h.getAfstand(), 5);
+        g.fillRect(h.getAfstand()- 16, 30 * h.getPaardNummer(), 16, 16);
+        g.drawImage(raceDing,(h.getAfstand()- 16),( 30 * h.getPaardNummer()), this);
     }
 
     /** Actie indien de button geklikt is*/
