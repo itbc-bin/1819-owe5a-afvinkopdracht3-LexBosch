@@ -93,6 +93,10 @@ public class Race extends JFrame implements ActionListener {
              * dat er 1 seconde pauze is. De methode pauzeer is onderdeel
              * van deze class
              */
+            tekenPaard(g, h1);
+            tekenPaard(g, h2);
+            tekenPaard(g, h3);
+            tekenPaard(g, h4);
             /* (8) Voeg hier code in om 4 paarden te tekenen die rennen
              * Dus een call van de methode tekenPaard
              */
