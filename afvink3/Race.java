@@ -46,7 +46,7 @@ public class Race extends JFrame implements ActionListener {
     Paard h2;
     Paard h3;
     Paard h4;
-    /* (3) Declareer een button met de naam button van het type JButton */
+    private JButton button;
     private JPanel panel;
 
     /** Applicatie - main functie voor runnen applicatie */
