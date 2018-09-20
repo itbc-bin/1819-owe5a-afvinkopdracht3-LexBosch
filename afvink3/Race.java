@@ -69,7 +69,7 @@ public class Race extends JFrame implements ActionListener {
         g.setColor(Color.red);
 
         h1 = new Paard("Henry", Color.green);
-        h2 = new Paard ("henk", Color.cyan);
+        h2 = new Paard ("Henk", Color.cyan);
         h3 = new Paard("Hector", Color.yellow);
         h4 = new Paard("Herman", Color.magenta);
         /**(6) Creatie van 4 paarden
@@ -87,6 +87,7 @@ public class Race extends JFrame implements ActionListener {
             h2.run();
             h3.run();
             h4.run();
+            pauzeer(100);
 
             /* (7) Voeg hier een aanroep van de methode pauzeer toe zodanig
              * dat er 1 seconde pauze is. De methode pauzeer is onderdeel
