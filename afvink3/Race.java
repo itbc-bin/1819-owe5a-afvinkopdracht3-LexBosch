@@ -1,4 +1,4 @@
-package Afvink3_2;
+package afvink3;
 
 /**
  * Race class
@@ -42,10 +42,10 @@ public class Race extends JFrame implements ActionListener {
 
     /** declaratie van variabelen */
     private static int lengte = 250;
-    /* (1) Declareer hier een constante int met de naam lengte en een waarde van 250 */
-    /* (2) Declareer hier h1, h2, h3, h4 van het type Paard
-     *  Deze paarden instantieer je later in het programma
-     */
+    Paard h1;
+    Paard h2;
+    Paard h3;
+    Paard h4;
     /* (3) Declareer een button met de naam button van het type JButton */
     private JPanel panel;
 
