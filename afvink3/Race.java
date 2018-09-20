@@ -63,8 +63,10 @@ public class Race extends JFrame implements ActionListener {
     private void startRace(Graphics g) {
         panel.setBackground(Color.white);
         /** Tekenen van de finish streep */
+
         /* (5) Geef de finish streep een rode kleur */
         g.fillRect(lengte, 0, 3, 100);
+        g.setColor(Color.red);
         /**(6) Creatie van 4 paarden
          * Dit is een instantiering van de 4 paard objecten
          * Bij de instantiering geef je de paarden een naam en een kleur mee
