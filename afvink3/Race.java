@@ -46,7 +46,7 @@ public class Race extends JFrame implements ActionListener {
     Paard h2;
     Paard h3;
     Paard h4;
-    private JButton button;
+    public JButton button;
     private JPanel panel;
 
     /** Applicatie - main functie voor runnen applicatie */
@@ -126,6 +126,7 @@ public class Race extends JFrame implements ActionListener {
         panel.setPreferredSize(new Dimension(300, 100));
         panel.setBackground(Color.white);
         window.add(panel);
+        button = new JButton("Run forest!");
         /* (9) Zet hier de tekst Run! op de button */
         window.add(button);
         button.addActionListener(this);
@@ -141,7 +142,7 @@ public class Race extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent event) {
         Graphics paper = panel.getGraphics();
         /* (10) Roep hier de methode startrace aan met de juiste parameterisering */
-        startRace (paper);
+        startRace(paper);
     }
 
     /** Pauzeer gedurende x millisecondes*/
