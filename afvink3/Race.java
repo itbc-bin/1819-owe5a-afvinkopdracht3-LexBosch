@@ -52,6 +52,7 @@ public class Race extends JFrame implements ActionListener {
     /** Applicatie - main functie voor runnen applicatie */
     public static void main(String[] args) {
         Race frame = new Race();
+        frame.setSize(400,140);
         /* (4) Geef het frame een breedte van 400 en hoogte van 140 */
         frame.createGUI();
         frame.setVisible(true);
